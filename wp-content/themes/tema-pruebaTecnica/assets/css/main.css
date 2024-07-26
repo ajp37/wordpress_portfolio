@@ -15,22 +15,35 @@ body {
   text-shadow: -1px -1px 0 rgba(255, 0, 0, 0.5), 1px 1px 0 #AED2D6, -2px -2px 0 rgba(0, 0, 255, 0.2), 2px 2px 0 rgba(0, 0, 255, 0.2);
   /* Sombra exterior azul */ }
 
-footer .container {
+footer {
+  background-color: #194350;
+  padding: 20px;
+  color: white; }
+
+.container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding-left: 10%;
-  padding-right: 10%; }
-  footer .container a {
-    text-decoration: none;
-    color: #6C878F;
-    font-family: "Roboto", sans-serif;
-    font-style: italic;
-    font-size: smaller; }
+  align-items: center; }
 
-.barra-vertical {
-  font-size: 36px;
-  margin-left: 55%; }
+.footer-left {
+  flex: 1;
+  padding-left: 10%; }
+
+.footer-right {
+  flex: 1;
+  text-align: right;
+  padding-left: 45%; }
+
+.legal-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  color: #6C878F;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: smaller; }
 
 .section {
   padding: 50px 20px;

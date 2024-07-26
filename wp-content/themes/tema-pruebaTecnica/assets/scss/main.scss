@@ -27,25 +27,77 @@ body {
       2px 2px 0 rgba(0, 0, 255, 0.2);  /* Sombra exterior azul */
   }
 
- footer .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    a {
-        text-decoration: none;
-        color: #6C878F;
-        font-family: "Roboto", sans-serif;
-        font-style: italic;
-        font-size: smaller;
-    }
+//  footer .container {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding-left: 10%;
+//     padding-right: 10%;
+//     a {
+//         text-decoration: none;
+//         color: #6C878F;
+//         font-family: "Roboto", sans-serif;
+//         font-style: italic;
+//         font-size: smaller;
+//     }
+// }
+
+
+
+footer {
+  background-color: $primary-color;
+  padding: 20px;
+  color: white;
 }
 
-.barra-vertical {
-    font-size: 36px;
-    margin-left: 55%
-  }
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  flex: 1;
+  padding-left: 10%;
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right;
+  padding-left: 45%;
+}
+
+.legal-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+    color: #6C878F;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-size: smaller;
+}
+
+// @media (max-width: 768px) {
+//   .container {
+//     flex-direction: column;
+//     align-items: center;
+//   }
+// }      creo que no, porque asi te lo pone montado encima .......  tras añadir los padding para posicionar cada parte del footer se lo carga asi q lo mismo si hay q usarlo
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
 

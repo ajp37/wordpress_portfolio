@@ -1,10 +1,14 @@
 <footer>
-    <div class="container">
-        <p class="texto-especial">POISON</p>
-        <p class="barra-vertical">|</p>
-        <a href="#">Legal Notice</a> | <a href="#">Legal Information</a>
+  <div class="container">
+    <div class="footer-left">
+      <p class="texto-especial">POISON</p>
     </div>
-    </footer>
-    <?php wp_footer(); ?>
-</body>
-</html>
+    <div class="footer-right">
+      <ul class="legal-links">
+        <li><a href="#">Legal Notice</a></li>
+        <p>|</p>
+        <li><a href="#">Legal Information</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
