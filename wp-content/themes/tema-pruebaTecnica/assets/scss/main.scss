@@ -1,0 +1,119 @@
+// Variables
+$primary-color: #194350;
+$secondary-color: #FFFFFF;
+$button-color: #D1D9DC;
+$background-color: #194350;
+$text-color: #FFFFFF;
+$flavour-color: #FE8B84;
+
+// Global Styles
+body {
+    font-family: 'Arial, sans-serif';
+    color: $text-color;
+    background-color: $background-color;
+    margin: 0;
+    padding: 0;
+}
+
+// Section Styles
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#buy-poison {
+    background-color: $primary-color;
+    color: white;
+    h1 {
+        font-size: 5em;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        
+    }
+    p {
+        font-size: 1.2em;
+    }
+    button {
+        background-color: $button-color;
+        border: none;
+        color: #194350;
+        padding: 10px 20px;
+        font-size: 1em;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
+
+#our-flavours {
+    background-color: $flavour-color;
+
+    h2 {
+        font-size: 2.5em;
+        color: $text-color;
+    }
+    .flavours-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .flavour-card {
+        background-color: white;
+        color: $primary-color;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        max-width: 300px;
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        p {
+            padding: 0 10px;
+            font-size: 1em;
+        }
+        button {
+            background-color: $flavour-color;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+#cruelty-free {
+    color: $primary-color;
+        background-color: $secondary-color;
+    h2 {
+        font-size: 2.5em;
+        
+    }
+    .puppy-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.2em;
+            max-width: 600px;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    }
+}

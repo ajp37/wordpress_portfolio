@@ -1,0 +1,23 @@
+footer {
+    background-color: $primary-color;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+
+    .social-links {
+        list-style: none;
+        li {
+            display: inline;
+            margin: 0 0.5em;
+        }
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        .social-links {
+            li {
+                display: block;
+                margin: 0.5em 0;
+            }
+        }
+    }
+}

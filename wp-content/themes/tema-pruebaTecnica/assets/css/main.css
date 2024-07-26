@@ -1,0 +1,88 @@
+body {
+  font-family: 'Arial, sans-serif';
+  color: #FFFFFF;
+  background-color: #194350;
+  margin: 0;
+  padding: 0; }
+
+.section {
+  padding: 50px 20px;
+  text-align: center; }
+
+#buy-poison {
+  background-color: #194350;
+  color: white; }
+  #buy-poison h1 {
+    font-size: 5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic; }
+  #buy-poison p {
+    font-size: 1.2em; }
+  #buy-poison button {
+    background-color: #D1D9DC;
+    border: none;
+    color: #194350;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer; }
+
+#our-flavours {
+  background-color: #FE8B84; }
+  #our-flavours h2 {
+    font-size: 2.5em;
+    color: #FFFFFF; }
+  #our-flavours .flavours-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; }
+  #our-flavours .flavour-card {
+    background-color: white;
+    color: #194350;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px; }
+    #our-flavours .flavour-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover; }
+    #our-flavours .flavour-card h3 {
+      font-size: 1.5em;
+      margin: 10px 0; }
+    #our-flavours .flavour-card p {
+      padding: 0 10px;
+      font-size: 1em; }
+    #our-flavours .flavour-card button {
+      background-color: #FE8B84;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-bottom: 10px; }
+
+#cruelty-free {
+  color: #194350;
+  background-color: #FFFFFF; }
+  #cruelty-free h2 {
+    font-size: 2.5em; }
+  #cruelty-free .puppy-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #cruelty-free .puppy-section h3 {
+      font-size: 2em; }
+    #cruelty-free .puppy-section p {
+      font-size: 1.2em;
+      max-width: 600px; }
+    #cruelty-free .puppy-section img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 20px; }
+
+/*# sourceMappingURL=main.css.map */
