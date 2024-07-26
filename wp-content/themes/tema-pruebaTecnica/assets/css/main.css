@@ -5,6 +5,33 @@ body {
   margin: 0;
   padding: 0; }
 
+/* Suponiendo que tienes un elemento con la clase "texto-especial" */
+.texto-especial {
+  font-family: 'Arial', sans-serif;
+  /* O cualquier otra fuente sans-serif que te guste */
+  font-size: 24px;
+  color: white;
+  /* Color del texto interior */
+  text-shadow: -1px -1px 0 rgba(255, 0, 0, 0.5), 1px 1px 0 #AED2D6, -2px -2px 0 rgba(0, 0, 255, 0.2), 2px 2px 0 rgba(0, 0, 255, 0.2);
+  /* Sombra exterior azul */ }
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%; }
+  footer .container a {
+    text-decoration: none;
+    color: #6C878F;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-size: smaller; }
+
+.barra-vertical {
+  font-size: 36px;
+  margin-left: 55%; }
+
 .section {
   padding: 50px 20px;
   text-align: center; }

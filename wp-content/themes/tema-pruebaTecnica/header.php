@@ -6,5 +6,5 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    <h1>Poison</h1>
+    <p class="texto-especial">POISON</p>
     </header>
