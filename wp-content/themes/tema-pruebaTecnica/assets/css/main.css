@@ -78,42 +78,77 @@ footer {
   padding: 0 10%; }
   #buy-poison .buy-poison-content {
     max-width: 600px;
-    text-align: left; }
+    text-align: left;
+    margin-top: -180px; }
   #buy-poison h1 {
-    font-size: 5em;
+    font-size: 6.5em;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: italic;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     line-height: 1.2;
     position: relative; }
     #buy-poison h1 .trust-us {
       display: block;
-      font-size: 1.5em;
+      font-size: 1em;
       font-weight: 400;
-      color: #FE8B84;
-      text-shadow: 2px 2px 0 #194350; }
+      color: transparent;
+      -webkit-text-stroke: 1px #FE8B84;
+      text-shadow: none;
+      margin-top: -60px;
+      margin-left: 26px; }
   #buy-poison p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    max-width: 500px; }
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 20px;
+    max-width: 500px;
+    font-weight: lighter;
+    letter-spacing: 0.05em;
+    word-spacing: 0.5em;
+    line-height: 1.5; }
   #buy-poison button {
     background-color: #D1D9DC;
     border: none;
     color: #194350;
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: 18px 65px;
+    margin-top: 25px;
+    margin-left: 10px;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    word-spacing: 0.5em;
     font-weight: 700;
     cursor: pointer;
     transition: background-color 0.3s ease; }
     #buy-poison button:hover {
       background-color: #b4c1c6; }
   #buy-poison .buy-poison-image {
-    max-width: 300px; }
+    max-width: 250px;
+    margin-right: 160px; }
     #buy-poison .buy-poison-image img {
       width: 100%;
       height: auto; }
+    #buy-poison .buy-poison-image .image-caption {
+      font-size: 0.7em;
+      color: #CCCCCC;
+      margin-top: 10px;
+      width: 170%; }
 
+@media (max-width: 768px) {
+  #buy-poison {
+    flex-direction: column;
+    padding: 20px; }
+    #buy-poison .buy-poison-content {
+      margin-top: 0;
+      text-align: center; }
+      #buy-poison .buy-poison-content h1 {
+        font-size: 3em; }
+      #buy-poison .buy-poison-content p {
+        font-size: 0.9em;
+        margin-bottom: 15px; }
+      #buy-poison .buy-poison-content button {
+        font-size: 0.9em; }
+    #buy-poison .buy-poison-image {
+      display: none; } }
 #our-flavours {
   background-color: #FE8B84; }
   #our-flavours h2 {

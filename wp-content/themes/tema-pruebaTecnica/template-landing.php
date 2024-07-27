@@ -18,8 +18,10 @@ get_header();
         if( !empty( $image ) ): ?>
             <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
         <?php endif; ?>
+        <p class="image-caption">*We keep the right to deny any refunds on our own terms. Total responsibility is up to the final user buying poison.</p>
     </div>
 </div>
+
 
 
 <div class="section" id="cruelty-free">

@@ -127,38 +127,51 @@ footer {
     .buy-poison-content {
         max-width: 600px;
         text-align: left;
+        margin-top: -180px; // Ajustar la posición del título y subtítulo
     }
 
     h1 {
-        font-size: 5em;
+        font-size: 6.5em; // Ajustar tamaño de la fuente para ser más grande
         font-family: "Roboto", sans-serif;
         font-weight: 700;
         font-style: italic;
-        margin-bottom: 20px;
+        margin-bottom: 10px; // Reducir el margen inferior
         line-height: 1.2;
         position: relative;
 
         .trust-us {
             display: block;
-            font-size: 1.5em;
+            font-size: 1em; // Ajustar tamaño de la fuente del subtítulo
             font-weight: 400;
-            color: #FE8B84;
-            text-shadow: 2px 2px 0 #194350;
+            color: transparent;
+            -webkit-text-stroke: 1px #FE8B84; // Contorno sin relleno
+            text-shadow: none; // Eliminar sombra del texto
+            margin-top: -60px; // Añadir margen superior
+            margin-left: 26px;
         }
     }
 
     p {
-        font-size: 1.2em;
-        margin-bottom: 30px;
+        font-size: 1em; // Ajustar tamaño de la fuente
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-bottom: 20px; // Reducir el margen inferior
         max-width: 500px;
+        font-weight:lighter;
+        letter-spacing: 0.05em;
+        word-spacing: 0.5em;
+        line-height: 1.5;
     }
 
     button {
         background-color: $button-color;
         border: none;
         color: #194350;
-        padding: 10px 20px;
-        font-size: 1em;
+        padding: 18px 65px;
+        margin-top: 25px;
+        margin-left: 10px;
+        font-size: 1.2em; // Ajustar tamaño de la fuente del botón
+        letter-spacing: 0.2em;
+        word-spacing: 0.5em;
         font-weight: 700;
         cursor: pointer;
         transition: background-color 0.3s ease;
@@ -169,11 +182,49 @@ footer {
     }
 
     .buy-poison-image {
-        max-width: 300px;
+        max-width: 250px; // Hacer la imagen un poco más pequeña
+        margin-right: 160px; // Desplazar la imagen hacia la izquierda para centrarla más
 
         img {
             width: 100%;
             height: auto;
+        }
+
+        .image-caption {
+            font-size: 0.7em; // Ajustar tamaño de la fuente de la leyenda
+            color: #CCCCCC;
+            margin-top: 10px; // Añadir margen superior
+            width: 170%;
+        }
+    }
+}
+
+// Media Queries
+@media (max-width: 768px) {
+    #buy-poison {
+        flex-direction: column;
+        padding: 20px;
+
+        .buy-poison-content {
+            margin-top: 0;
+            text-align: center;
+
+            h1 {
+                font-size: 3em; // Ajustar tamaño de la fuente para dispositivos móviles
+            }
+
+            p {
+                font-size: 0.9em; // Ajustar tamaño de la fuente para dispositivos móviles
+                margin-bottom: 15px; // Ajustar margen inferior para dispositivos móviles
+            }
+
+            button {
+                font-size: 0.9em; // Ajustar tamaño de la fuente del botón para dispositivos móviles
+            }
+        }
+
+        .buy-poison-image {
+            display: none; // Ocultar imagen en dispositivos móviles
         }
     }
 }
