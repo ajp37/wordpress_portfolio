@@ -28,11 +28,16 @@ get_header();
     <h2><?php the_field('cruelty_free_title'); ?></h2>
     <p><?php the_field('cruelty_free_description'); ?></p>
     <div class="puppy-section">
-        <h3><?php the_field('cruelty_free_puppy_title'); ?></h3>
-        <p><?php the_field('cruelty_free_puppy_description'); ?></p>
-        <img src="<?php the_field('cruelty_free_puppy_image'); ?>" alt="A cute puppy">
+        <div class="puppy-text">
+            <h3><?php the_field('cruelty_free_puppy_title'); ?></h3>
+            <p><?php the_field('cruelty_free_puppy_description'); ?></p>
+        </div>
+        <div class="puppy-image">
+            <img src="<?php the_field('cruelty_free_puppy_image'); ?>" alt="A cute puppy">
+        </div>
     </div>
 </div>
+
 
 
 <div class="section" id="our-flavours">
