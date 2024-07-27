@@ -24,19 +24,20 @@ get_header();
 
 
 
-<div class="section" id="cruelty-free">
-    <h2><?php the_field('cruelty_free_title'); ?></h2>
-    <p><?php the_field('cruelty_free_description'); ?></p>
+<div class="section cruelty-free">
+    <h2 class="cruelty-free-title"><?php the_field('cruelty_free_title'); ?></h2>
+    <p class="cruelty-free-description"><?php the_field('cruelty_free_description'); ?></p>
     <div class="puppy-section">
         <div class="puppy-text">
-            <h3><?php the_field('cruelty_free_puppy_title'); ?></h3>
-            <p><?php the_field('cruelty_free_puppy_description'); ?></p>
+            <h3 class="puppy-title"><?php the_field('cruelty_free_puppy_title'); ?></h3>
+            <p class="puppy-description"><?php the_field('cruelty_free_puppy_description'); ?></p>
         </div>
         <div class="puppy-image">
             <img src="<?php the_field('cruelty_free_puppy_image'); ?>" alt="A cute puppy">
         </div>
     </div>
 </div>
+
 
 
 

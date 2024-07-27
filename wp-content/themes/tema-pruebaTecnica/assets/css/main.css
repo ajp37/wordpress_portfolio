@@ -211,57 +211,34 @@ footer {
       cursor: pointer;
       margin-bottom: 10px; }
 
-#cruelty-free {
-  color: #194350;
-  background-color: #FFFFFF;
-  padding: 50px 20px;
-  text-align: center; }
-  #cruelty-free h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    font-weight: bold; }
-  #cruelty-free p {
-    font-size: 1.2em;
-    max-width: 800px;
-    margin: 0 auto 40px auto;
-    line-height: 1.6; }
-  #cruelty-free .puppy-section {
+.cruelty-free {
+  background-color: #f0f0f0;
+  padding: 80px 40px; }
+  .cruelty-free .cruelty-free-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px; }
+  .cruelty-free .cruelty-free-description {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #666;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px; }
+  .cruelty-free .puppy-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left; }
-    #cruelty-free .puppy-section .puppy-text {
-      max-width: 600px;
-      text-align: center;
-      margin-bottom: 20px; }
-      #cruelty-free .puppy-section .puppy-text h3 {
-        font-size: 2em;
-        margin-bottom: 10px;
-        font-weight: bold; }
-      #cruelty-free .puppy-section .puppy-text p {
-        font-size: 1.2em;
-        line-height: 1.6; }
-    #cruelty-free .puppy-section .puppy-image img {
-      width: 100%;
-      max-width: 600px;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      margin-top: 20px; }
-
-@media (max-width: 768px) {
-  #cruelty-free {
-    padding: 30px 10px; }
-    #cruelty-free h2 {
-      font-size: 2em; }
-    #cruelty-free p {
-      font-size: 1em;
-      max-width: 100%; }
-    #cruelty-free .puppy-section .puppy-text h3 {
-      font-size: 1.8em; }
-    #cruelty-free .puppy-section .puppy-text p {
-      font-size: 1em; }
-    #cruelty-free .puppy-section .puppy-image img {
-      max-width: 100%; } }
+    justify-content: space-between;
+    align-items: center; }
+    .cruelty-free .puppy-section .puppy-text {
+      max-width: 50%; }
+    .cruelty-free .puppy-section .puppy-image {
+      max-width: 50%; }
+      .cruelty-free .puppy-section .puppy-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
 
 /*# sourceMappingURL=main.css.map */
