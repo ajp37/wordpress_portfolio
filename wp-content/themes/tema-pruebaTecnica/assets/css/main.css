@@ -136,7 +136,9 @@ footer {
 @media (max-width: 768px) {
   #buy-poison {
     flex-direction: column;
-    padding: 20px; }
+    padding: 20px;
+    margin-left: 3%;
+    margin-right: 3%; }
     #buy-poison .buy-poison-content {
       margin-top: 0;
       text-align: center; }
@@ -153,12 +155,26 @@ footer {
         margin-bottom: 15px;
         margin-top: 20px; }
       #buy-poison .buy-poison-content button {
-        font-size: 0.9em; }
+        background-color: #D1D9DC;
+        border: none;
+        color: #194350;
+        padding: 18px 65px;
+        margin-top: 40px;
+        margin-left: 10px;
+        font-size: 1.2em;
+        letter-spacing: 0.2em;
+        word-spacing: 0.5em;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s ease; }
     #buy-poison .buy-poison-image img {
-      visibility: hidden; }
+      display: none; }
     #buy-poison .buy-poison-image .image-caption {
       display: block;
-      text-align: right; } }
+      text-align: right;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: -140px; } }
 #our-flavours {
   background-color: #FE8B84; }
   #our-flavours h2 {

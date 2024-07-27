@@ -169,7 +169,7 @@ footer {
         padding: 18px 65px;
         margin-top: 25px;
         margin-left: 10px;
-        font-size: 1.2em; // Ajustar tamaño de la fuente del botón
+        font-size: 1.2em;
         letter-spacing: 0.2em;
         word-spacing: 0.5em;
         font-weight: 700;
@@ -204,6 +204,8 @@ footer {
     #buy-poison {
         flex-direction: column;
         padding: 20px;
+        margin-left: 3%;
+        margin-right: 3%;
 
         .buy-poison-content {
             margin-top: 0;
@@ -228,17 +230,31 @@ footer {
             }
 
             button {
-                font-size: 0.9em; // Ajustar tamaño de la fuente del botón para dispositivos móviles
+                background-color: $button-color;
+                border: none;
+                color: #194350;
+                padding: 18px 65px;
+                margin-top: 40px;
+                margin-left: 10px;
+                font-size: 1.2em;
+                letter-spacing: 0.2em;
+                word-spacing: 0.5em;
+                font-weight: 700;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
             }
         }
 
         .buy-poison-image img {
-            visibility: hidden;
+            display: none;
         }
 
         .buy-poison-image .image-caption {
             display: block; // Mostrar leyenda en dispositivos móviles
             text-align:right;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: -140px;
         }
     }
 }
