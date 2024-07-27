@@ -27,7 +27,7 @@ get_header();
 <div class="section cruelty-free">
     <h2 class="cruelty-free-title">
         <?php the_field('cruelty_free_title'); ?>
-        <span class="development"><?php the_field('cruelty-free-subtitle'); ?></span>
+        <span class="development"><?php the_field('cruelty_free_subtitle'); ?></span>
     </h2>
     <p class="cruelty-free-description"><?php the_field('cruelty_free_description'); ?></p>
     <div class="puppy-section">
@@ -40,6 +40,7 @@ get_header();
         </div>
     </div>
 </div>
+
 
 
 

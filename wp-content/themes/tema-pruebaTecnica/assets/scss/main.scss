@@ -312,21 +312,32 @@ footer {
 }
 
 .cruelty-free {
-    // Background color, padding, etc. based on image
-    background-color: #f0f0f0; // Replace with extracted color
+    background-color: #FFFFFF;
     padding: 80px 40px;
 
     .cruelty-free-title {
-        // Font, color, size, etc. based on image
-        font-family: 'Montserrat', sans-serif; // Replace with extracted font
-        font-size: 3rem;
-        color: #333;
-        text-align: center;
-        margin-bottom: 20px;
+        font-family: 'Josefin', sans-serif; //no se esta aplicando, importacion en header
+        font-size: 5rem;
+        color: $primary-color;
+        text-align: left;
+        margin-top: -20px;
+        margin-left: 90px;
+        position: relative;
+        letter-spacing: 0.05em;
+        word-spacing: 0em;
+
+        .development {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: transparent;
+            -webkit-text-stroke: 1px #333; // Contorno sin relleno
+            text-shadow: none; // Eliminar sombra del texto
+            margin-top: -20px;
+        }
     }
 
     .cruelty-free-description {
-        // Font, color, line height, etc. based on image
         font-size: 1.2rem;
         line-height: 1.5;
         color: #666;
@@ -341,26 +352,64 @@ footer {
         align-items: center;
 
         .puppy-text {
-            // Text styling based on image
             max-width: 50%; // Adjust based on layout
 
             .puppy-title {
-                // Heading styling based on image
+                font-size: 2rem;
+                color: #333;
+                margin-bottom: 10px;
             }
 
             .puppy-description {
-                // Paragraph styling based on image
+                font-size: 1.2rem;
+                color: #666;
+                line-height: 1.5;
             }
         }
 
         .puppy-image {
-            // Image styling based on image
             max-width: 50%; // Adjust based on layout
+
             img {
                 width: 100%;
                 height: auto;
                 border-radius: 10px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}
+
+// Media Queries
+@media (max-width: 768px) {
+    .cruelty-free {
+        padding: 40px 20px;
+
+        .cruelty-free-title {
+            font-size: 2.5rem;
+
+            .development {
+                font-size: 1rem;
+                -webkit-text-stroke: 0.5px #333;
+            }
+        }
+
+        .cruelty-free-description {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .puppy-section {
+            flex-direction: column;
+            align-items: center;
+
+            .puppy-text, .puppy-image {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .puppy-image {
+                margin-top: 20px;
             }
         }
     }

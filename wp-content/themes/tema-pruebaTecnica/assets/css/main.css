@@ -212,14 +212,26 @@ footer {
       margin-bottom: 10px; }
 
 .cruelty-free {
-  background-color: #f0f0f0;
+  background-color: #FFFFFF;
   padding: 80px 40px; }
   .cruelty-free .cruelty-free-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px; }
+    font-family: 'Josefin', sans-serif;
+    font-size: 5rem;
+    color: #194350;
+    text-align: left;
+    margin-top: -20px;
+    margin-left: 90px;
+    position: relative;
+    letter-spacing: 0.05em;
+    word-spacing: 0em; }
+    .cruelty-free .cruelty-free-title .development {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: transparent;
+      -webkit-text-stroke: 1px #333;
+      text-shadow: none;
+      margin-top: -20px; }
   .cruelty-free .cruelty-free-description {
     font-size: 1.2rem;
     line-height: 1.5;
@@ -233,6 +245,14 @@ footer {
     align-items: center; }
     .cruelty-free .puppy-section .puppy-text {
       max-width: 50%; }
+      .cruelty-free .puppy-section .puppy-text .puppy-title {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 10px; }
+      .cruelty-free .puppy-section .puppy-text .puppy-description {
+        font-size: 1.2rem;
+        color: #666;
+        line-height: 1.5; }
     .cruelty-free .puppy-section .puppy-image {
       max-width: 50%; }
       .cruelty-free .puppy-section .puppy-image img {
@@ -240,5 +260,25 @@ footer {
         height: auto;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+
+@media (max-width: 768px) {
+  .cruelty-free {
+    padding: 40px 20px; }
+    .cruelty-free .cruelty-free-title {
+      font-size: 2.5rem; }
+      .cruelty-free .cruelty-free-title .development {
+        font-size: 1rem;
+        -webkit-text-stroke: 0.5px #333; }
+    .cruelty-free .cruelty-free-description {
+      font-size: 1rem;
+      margin-bottom: 20px; }
+    .cruelty-free .puppy-section {
+      flex-direction: column;
+      align-items: center; }
+      .cruelty-free .puppy-section .puppy-text, .cruelty-free .puppy-section .puppy-image {
+        max-width: 100%;
+        text-align: center; }
+      .cruelty-free .puppy-section .puppy-image {
+        margin-top: 20px; } }
 
 /*# sourceMappingURL=main.css.map */
