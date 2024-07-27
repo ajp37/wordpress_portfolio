@@ -7,7 +7,7 @@ get_header();
     <div class="buy-poison-content">
         <h1>
             <?php the_field('buy_poison_title'); ?><br>
-            <span class="trust-us">Trust us.</span>
+            <span class="trust-us"><?php the_field('buy_poison_subtitle'); ?></span>
         </h1>
         <p><?php the_field('buy_poison_description'); ?></p>
         <button><?php the_field('buy_poison_button_text'); ?></button>
@@ -25,7 +25,10 @@ get_header();
 
 
 <div class="section cruelty-free">
-    <h2 class="cruelty-free-title"><?php the_field('cruelty_free_title'); ?></h2>
+    <h2 class="cruelty-free-title">
+        <?php the_field('cruelty_free_title'); ?>
+        <span class="development"><?php the_field('cruelty-free-subtitle'); ?></span>
+    </h2>
     <p class="cruelty-free-description"><?php the_field('cruelty_free_description'); ?></p>
     <div class="puppy-section">
         <div class="puppy-text">
