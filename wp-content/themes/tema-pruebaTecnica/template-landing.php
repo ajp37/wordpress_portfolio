@@ -4,10 +4,23 @@ get_header();
 ?>
 
 <div class="section" id="buy-poison">
-    <h1><?php the_field('buy_poison_title'); ?></h1>
-    <p><?php the_field('buy_poison_description'); ?></p>
-    <button><?php the_field('buy_poison_button_text'); ?></button>
+    <div class="buy-poison-content">
+        <h1>
+            <?php the_field('buy_poison_title'); ?><br>
+            <span class="trust-us">Trust us.</span>
+        </h1>
+        <p><?php the_field('buy_poison_description'); ?></p>
+        <button><?php the_field('buy_poison_button_text'); ?></button>
+    </div>
+    <div class="buy-poison-image">
+        <?php 
+        $image = get_field('buy_poison_image');
+        if( !empty( $image ) ): ?>
+            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+        <?php endif; ?>
+    </div>
 </div>
+
 
 <div class="section" id="our-flavours">
     <h2>Our Flavours</h2>

@@ -64,18 +64,38 @@ footer {
     margin-right: 50%; } }
 .section {
   padding: 50px 20px;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
 
 #buy-poison {
   background-color: #194350;
-  color: white; }
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative; }
+  #buy-poison .buy-poison-content {
+    max-width: 600px;
+    text-align: left; }
   #buy-poison h1 {
     font-size: 5em;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-style: italic; }
+    font-style: italic;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    position: relative; }
+    #buy-poison h1 .trust-us {
+      display: block;
+      font-size: 0.8em;
+      font-weight: 400;
+      color: #FE8B84;
+      text-shadow: 2px 2px 0 #194350; }
   #buy-poison p {
-    font-size: 1.2em; }
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 500px; }
   #buy-poison button {
     background-color: #D1D9DC;
     border: none;
@@ -83,7 +103,18 @@ footer {
     padding: 10px 20px;
     font-size: 1em;
     font-weight: 700;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: background-color 0.3s ease; }
+    #buy-poison button:hover {
+      background-color: #b4c1c6; }
+  #buy-poison .buy-poison-image {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    max-width: 300px; }
+    #buy-poison .buy-poison-image img {
+      width: 100%;
+      height: auto; }
 
 #our-flavours {
   background-color: #FE8B84; }

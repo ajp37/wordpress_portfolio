@@ -111,21 +111,47 @@ footer {
 .section {
     padding: 50px 20px;
     text-align: center;
+    position: relative;
 }
 
 #buy-poison {
     background-color: $primary-color;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+
+    .buy-poison-content {
+        max-width: 600px;
+        text-align: left;
+    }
+
     h1 {
         font-size: 5em;
         font-family: "Roboto", sans-serif;
         font-weight: 700;
         font-style: italic;
-        
+        margin-bottom: 20px;
+        line-height: 1.2;
+        position: relative;
+
+        .trust-us {
+            display: block;
+            font-size: 0.8em;
+            font-weight: 400;
+            color: #FE8B84;
+            text-shadow: 2px 2px 0 #194350;
+        }
     }
+
     p {
         font-size: 1.2em;
+        margin-bottom: 30px;
+        max-width: 500px;
     }
+
     button {
         background-color: $button-color;
         border: none;
@@ -134,8 +160,26 @@ footer {
         font-size: 1em;
         font-weight: 700;
         cursor: pointer;
+        transition: background-color 0.3s ease;
+        
+        &:hover {
+            background-color: darken($button-color, 10%);
+        }
+    }
+
+    .buy-poison-image {
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+        max-width: 300px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 }
+
 
 
 
