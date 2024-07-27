@@ -127,7 +127,7 @@ footer {
     .buy-poison-content {
         max-width: 600px;
         text-align: left;
-        margin-top: -180px; // Ajustar la posición del título y subtítulo
+        margin-top: -220px; // Ajustar la posición del título y subtítulo
     }
 
     h1 {
@@ -156,7 +156,7 @@ footer {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         margin-bottom: 20px; // Reducir el margen inferior
         max-width: 500px;
-        font-weight:lighter;
+        font-weight: lighter;
         letter-spacing: 0.05em;
         word-spacing: 0.5em;
         line-height: 1.5;
@@ -175,7 +175,7 @@ footer {
         font-weight: 700;
         cursor: pointer;
         transition: background-color 0.3s ease;
-        
+
         &:hover {
             background-color: darken($button-color, 10%);
         }
@@ -183,7 +183,7 @@ footer {
 
     .buy-poison-image {
         max-width: 250px; // Hacer la imagen un poco más pequeña
-        margin-right: 160px; // Desplazar la imagen hacia la izquierda para centrarla más
+        margin-right: 190px; // Desplazar la imagen hacia el centro
 
         img {
             width: 100%;
@@ -193,7 +193,7 @@ footer {
         .image-caption {
             font-size: 0.7em; // Ajustar tamaño de la fuente de la leyenda
             color: #CCCCCC;
-            margin-top: 10px; // Añadir margen superior
+            margin-top: 80px; // Añadir margen superior
             width: 170%;
         }
     }
@@ -211,11 +211,20 @@ footer {
 
             h1 {
                 font-size: 3em; // Ajustar tamaño de la fuente para dispositivos móviles
+                margin-bottom: 5px; // Ajustar margen inferior para dispositivos móviles
+
+                .trust-us {
+                    font-size: 0.8em; // Ajustar tamaño de la fuente del subtítulo para dispositivos móviles
+                    margin-top: -25px; // Ajustar margen superior para dispositivos móviles
+                    margin-left: -98px; // Centrar subtítulo en dispositivos móviles
+                    -webkit-text-stroke: 0.5px #FE8B84; // Ajustar contorno para dispositivos móviles
+                }
             }
 
             p {
                 font-size: 0.9em; // Ajustar tamaño de la fuente para dispositivos móviles
                 margin-bottom: 15px; // Ajustar margen inferior para dispositivos móviles
+                margin-top: 20px;
             }
 
             button {
@@ -223,11 +232,18 @@ footer {
             }
         }
 
-        .buy-poison-image {
-            display: none; // Ocultar imagen en dispositivos móviles
+        .buy-poison-image img {
+            visibility: hidden;
+        }
+
+        .buy-poison-image .image-caption {
+            display: block; // Mostrar leyenda en dispositivos móviles
+            text-align:right;
         }
     }
 }
+
+
 
 
 

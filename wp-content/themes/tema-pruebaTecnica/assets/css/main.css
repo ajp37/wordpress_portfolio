@@ -79,7 +79,7 @@ footer {
   #buy-poison .buy-poison-content {
     max-width: 600px;
     text-align: left;
-    margin-top: -180px; }
+    margin-top: -220px; }
   #buy-poison h1 {
     font-size: 6.5em;
     font-family: "Roboto", sans-serif;
@@ -123,14 +123,14 @@ footer {
       background-color: #b4c1c6; }
   #buy-poison .buy-poison-image {
     max-width: 250px;
-    margin-right: 160px; }
+    margin-right: 190px; }
     #buy-poison .buy-poison-image img {
       width: 100%;
       height: auto; }
     #buy-poison .buy-poison-image .image-caption {
       font-size: 0.7em;
       color: #CCCCCC;
-      margin-top: 10px;
+      margin-top: 80px;
       width: 170%; }
 
 @media (max-width: 768px) {
@@ -141,14 +141,24 @@ footer {
       margin-top: 0;
       text-align: center; }
       #buy-poison .buy-poison-content h1 {
-        font-size: 3em; }
+        font-size: 3em;
+        margin-bottom: 5px; }
+        #buy-poison .buy-poison-content h1 .trust-us {
+          font-size: 0.8em;
+          margin-top: -25px;
+          margin-left: -98px;
+          -webkit-text-stroke: 0.5px #FE8B84; }
       #buy-poison .buy-poison-content p {
         font-size: 0.9em;
-        margin-bottom: 15px; }
+        margin-bottom: 15px;
+        margin-top: 20px; }
       #buy-poison .buy-poison-content button {
         font-size: 0.9em; }
-    #buy-poison .buy-poison-image {
-      display: none; } }
+    #buy-poison .buy-poison-image img {
+      visibility: hidden; }
+    #buy-poison .buy-poison-image .image-caption {
+      display: block;
+      text-align: right; } }
 #our-flavours {
   background-color: #FE8B84; }
   #our-flavours h2 {
