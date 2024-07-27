@@ -6,7 +6,7 @@
     <div class="footer-right">
       <ul class="legal-links">
         <li><a href="#">Legal Notice</a></li>
-        <p>|</p>
+        <li>|</li>
         <li><a href="#">Legal Information</a></li>
       </ul>
     </div>
