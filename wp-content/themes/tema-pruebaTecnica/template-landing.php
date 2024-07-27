@@ -22,6 +22,17 @@ get_header();
 </div>
 
 
+<div class="section" id="cruelty-free">
+    <h2><?php the_field('cruelty_free_title'); ?></h2>
+    <p><?php the_field('cruelty_free_description'); ?></p>
+    <div class="puppy-section">
+        <h3><?php the_field('cruelty_free_puppy_title'); ?></h3>
+        <p><?php the_field('cruelty_free_puppy_description'); ?></p>
+        <img src="<?php the_field('cruelty_free_puppy_image'); ?>" alt="A cute puppy">
+    </div>
+</div>
+
+
 <div class="section" id="our-flavours">
     <h2>Our Flavours</h2>
     <div class="flavours-grid">
@@ -41,14 +52,5 @@ get_header();
     </div>
 </div>
 
-<div class="section" id="cruelty-free">
-    <h2><?php the_field('cruelty_free_title'); ?></h2>
-    <p><?php the_field('cruelty_free_description'); ?></p>
-    <div class="puppy-section">
-        <h3><?php the_field('cruelty_free_puppy_title'); ?></h3>
-        <p><?php the_field('cruelty_free_puppy_description'); ?></p>
-        <img src="<?php the_field('cruelty_free_puppy_image'); ?>" alt="A cute puppy">
-    </div>
-</div>
 
 <?php get_footer(); ?>

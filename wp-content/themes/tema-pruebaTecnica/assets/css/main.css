@@ -71,10 +71,11 @@ footer {
   background-color: #194350;
   color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   min-height: 100vh;
-  position: relative; }
+  position: relative;
+  padding: 0 10%; }
   #buy-poison .buy-poison-content {
     max-width: 600px;
     text-align: left; }
@@ -88,7 +89,7 @@ footer {
     position: relative; }
     #buy-poison h1 .trust-us {
       display: block;
-      font-size: 0.8em;
+      font-size: 1.5em;
       font-weight: 400;
       color: #FE8B84;
       text-shadow: 2px 2px 0 #194350; }
@@ -108,9 +109,6 @@ footer {
     #buy-poison button:hover {
       background-color: #b4c1c6; }
   #buy-poison .buy-poison-image {
-    position: absolute;
-    bottom: 0;
-    right: 10%;
     max-width: 300px; }
     #buy-poison .buy-poison-image img {
       width: 100%;

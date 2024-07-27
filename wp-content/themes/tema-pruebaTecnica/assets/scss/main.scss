@@ -118,10 +118,11 @@ footer {
     background-color: $primary-color;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     min-height: 100vh;
     position: relative;
+    padding: 0 10%;
 
     .buy-poison-content {
         max-width: 600px;
@@ -139,7 +140,7 @@ footer {
 
         .trust-us {
             display: block;
-            font-size: 0.8em;
+            font-size: 1.5em;
             font-weight: 400;
             color: #FE8B84;
             text-shadow: 2px 2px 0 #194350;
@@ -168,9 +169,6 @@ footer {
     }
 
     .buy-poison-image {
-        position: absolute;
-        bottom: 0;
-        right: 10%;
         max-width: 300px;
 
         img {
