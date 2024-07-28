@@ -175,42 +175,6 @@ footer {
       margin-left: 15px;
       margin-right: 15px;
       margin-top: -140px; } }
-#our-flavours {
-  background-color: #FE8B84; }
-  #our-flavours h2 {
-    font-size: 2.5em;
-    color: #FFFFFF; }
-  #our-flavours .flavours-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; }
-  #our-flavours .flavour-card {
-    background-color: white;
-    color: #194350;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    max-width: 300px; }
-    #our-flavours .flavour-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover; }
-    #our-flavours .flavour-card h3 {
-      font-size: 1.5em;
-      margin: 10px 0; }
-    #our-flavours .flavour-card p {
-      padding: 0 10px;
-      font-size: 1em; }
-    #our-flavours .flavour-card button {
-      background-color: #FE8B84;
-      border: none;
-      color: white;
-      padding: 10px 20px;
-      font-size: 1em;
-      cursor: pointer;
-      margin-bottom: 10px; }
-
 .cruelty-free {
   background-color: #FFFFFF;
   padding: 80px 40px;
@@ -334,5 +298,50 @@ footer {
         .cruelty-free .puppy-section .puppy-image img {
           width: 100%;
           height: auto; } }
+#our-flavours {
+  background-color: #FE8B84;
+  text-align: center; }
+  #our-flavours h2 {
+    font-size: 2.5em;
+    color: #FFFFFF;
+    margin-bottom: 20px; }
+  #our-flavours .flavours-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; }
+  #our-flavours .flavour-card {
+    background-color: white;
+    color: #194350;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px; }
+    #our-flavours .flavour-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover; }
+    #our-flavours .flavour-card h3 {
+      font-size: 1.5em;
+      margin: 10px 0; }
+    #our-flavours .flavour-card p {
+      padding: 0 10px;
+      font-size: 1em; }
+    #our-flavours .flavour-card button {
+      background-color: #FE8B84;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-bottom: 10px; }
+  #our-flavours #load-more {
+    background-color: #FE8B84;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px; }
 
 /*# sourceMappingURL=main.css.map */

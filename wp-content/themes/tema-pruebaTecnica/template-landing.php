@@ -23,7 +23,6 @@ get_header();
 </div>
 
 
-
 <div class="section cruelty-free">
     <div class="header-decoration">
         <span class="section-number">03 - 05</span>
@@ -53,21 +52,35 @@ get_header();
 <div class="section" id="our-flavours">
     <h2>Our Flavours</h2>
     <div class="flavours-grid">
-        <?php for ($i = 1; $i <= 12; $i++): 
-            $title = get_field("flavour_{$i}_title");
-            $description = get_field("flavour_{$i}_description");
-            $image = get_field("flavour_{$i}_image");
-            if ($title && $description && $image): ?>
-                <div class="flavour-card">
-                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($title); ?>">
-                    <h3><?php echo esc_html($title); ?></h3>
-                    <p><?php echo esc_html($description); ?></p>
-                    <button>Details →</button>
-                </div>
-            <?php endif; 
-        endfor; ?>
+        <?php 
+        $query = new WP_Query(array(
+            'post_type' => 'flavour', 
+            'posts_per_page' => 2 // Cambiar esto a 12 cuando tengas más publicaciones
+        ));
+
+        if ($query->have_posts()) :
+            while ($query->have_posts()) : $query->the_post();
+                $title = get_field("flavour_title");
+                $description = get_field("flavour_description");
+                $image = get_field("flavour_image");
+                if ($title && $description && $image): ?>
+                    <div class="flavour-card">
+                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($title); ?>">
+                        <h3><?php echo esc_html($title); ?></h3>
+                        <p><?php echo esc_html($description); ?></p>
+                        <button>Details →</button>
+                    </div>
+                <?php endif;
+            endwhile;
+            wp_reset_postdata();
+        else :
+            echo '<p>No flavours found</p>';
+        endif; ?>
     </div>
+    <button id="load-more">Load More</button>
 </div>
+
+
 
 
 <?php get_footer(); ?>

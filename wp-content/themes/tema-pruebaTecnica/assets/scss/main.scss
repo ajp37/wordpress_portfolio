@@ -260,57 +260,6 @@ footer {
 }
 
 
-
-
-
-
-
-
-#our-flavours {
-    background-color: $flavour-color;
-
-    h2 {
-        font-size: 2.5em;
-        color: $text-color;
-    }
-    .flavours-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-    .flavour-card {
-        background-color: white;
-        color: $primary-color;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        max-width: 300px;
-        img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        h3 {
-            font-size: 1.5em;
-            margin: 10px 0;
-        }
-        p {
-            padding: 0 10px;
-            font-size: 1em;
-        }
-        button {
-            background-color: $flavour-color;
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            font-size: 1em;
-            cursor: pointer;
-            margin-bottom: 10px;
-        }
-    }
-}
-
 .cruelty-free {
     background-color: #FFFFFF;
     padding: 80px 40px;
@@ -493,5 +442,61 @@ footer {
 }
 
 
+#our-flavours {
+    background-color: $flavour-color;
+    text-align: center;
 
+    h2 {
+        font-size: 2.5em;
+        color: $text-color;
+        margin-bottom: 20px;
+    }
 
+    .flavours-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .flavour-card {
+        background-color: white;
+        color: $primary-color;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        max-width: 300px;
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        p {
+            padding: 0 10px;
+            font-size: 1em;
+        }
+        button {
+            background-color: $flavour-color;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+    }
+
+    #load-more {
+        background-color: $flavour-color;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+}
