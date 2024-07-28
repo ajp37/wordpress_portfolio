@@ -213,29 +213,32 @@ footer {
 
 .cruelty-free {
   background-color: #FFFFFF;
-  padding: 80px 40px; }
+  padding: 80px 40px;
+  font-family: 'Josefin', sans-serif; }
   .cruelty-free .cruelty-free-title {
     font-family: 'Josefin', sans-serif;
-    font-size: 5rem;
+    font-size: 5.5rem;
     color: #194350;
     text-align: left;
     margin-top: -20px;
-    margin-left: 90px;
+    margin-left: 150px;
     position: relative;
     letter-spacing: 0.05em;
     word-spacing: 0em; }
     .cruelty-free .cruelty-free-title .development {
       display: block;
-      font-size: 1.5rem;
-      font-weight: 400;
+      font-size: 5.5rem;
+      font-weight: 600;
       color: transparent;
-      -webkit-text-stroke: 1px #333;
+      -webkit-text-stroke: 1px #FE8B84;
       text-shadow: none;
-      margin-top: -20px; }
+      margin-top: -45px;
+      margin-left: 40px; }
   .cruelty-free .cruelty-free-description {
     font-size: 1.2rem;
+    font-weight: 600;
     line-height: 1.5;
-    color: #666;
+    color: #194350;
     text-align: center;
     max-width: 600px;
     margin: 0 auto 40px; }
@@ -244,17 +247,23 @@ footer {
     justify-content: space-between;
     align-items: center; }
     .cruelty-free .puppy-section .puppy-text {
-      max-width: 50%; }
+      max-width: 40%;
+      margin-left: 90px; }
       .cruelty-free .puppy-section .puppy-text .puppy-title {
-        font-size: 2rem;
-        color: #333;
-        margin-bottom: 10px; }
+        font-size: 2.5rem;
+        color: #194350;
+        margin-bottom: 10px;
+        margin-top: -17px; }
       .cruelty-free .puppy-section .puppy-text .puppy-description {
-        font-size: 1.2rem;
-        color: #666;
-        line-height: 1.5; }
+        font-size: 0.95rem;
+        color: #759097;
+        line-height: 1.5;
+        text-align: left;
+        margin-left: 100px;
+        margin-right: 60px; }
     .cruelty-free .puppy-section .puppy-image {
-      max-width: 50%; }
+      max-width: 50%;
+      margin-right: 245px; }
       .cruelty-free .puppy-section .puppy-image img {
         width: 100%;
         height: auto;
