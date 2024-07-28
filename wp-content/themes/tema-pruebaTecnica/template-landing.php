@@ -25,6 +25,10 @@ get_header();
 
 
 <div class="section cruelty-free">
+    <div class="header-decoration">
+        <span class="section-number">03 - 05</span>
+        <div class="line-decoration"></div>
+    </div>
     <h2 class="cruelty-free-title">
         <?php the_field('cruelty_free_title'); ?>
         <span class="development"><?php the_field('cruelty_free_subtitle'); ?></span>
@@ -40,6 +44,7 @@ get_header();
         </div>
     </div>
 </div>
+
 
 
 

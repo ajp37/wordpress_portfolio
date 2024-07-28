@@ -214,13 +214,33 @@ footer {
 .cruelty-free {
   background-color: #FFFFFF;
   padding: 80px 40px;
-  font-family: 'Josefin', sans-serif; }
+  font-family: 'Josefin', sans-serif;
+  position: relative; }
+  .cruelty-free .header-decoration {
+    position: absolute;
+    top: 80px;
+    left: 160px;
+    display: flex;
+    align-items: center; }
+    .cruelty-free .header-decoration .section-number {
+      position: absolute;
+      font-size: 2rem;
+      font-weight: 600;
+      font-style: italic;
+      color: #194350;
+      margin-left: 15px;
+      margin-top: -20px;
+      word-spacing: 0.5em; }
+    .cruelty-free .header-decoration .line-decoration {
+      width: 350px;
+      height: 90px;
+      background: repeating-linear-gradient(45deg, rgba(255, 126, 95, 0), rgba(255, 126, 95, 0) 2px, rgba(255, 180, 123, 0.5) 2px, rgba(255, 180, 123, 0.5) 4px); }
   .cruelty-free .cruelty-free-title {
     font-family: 'Josefin', sans-serif;
     font-size: 5.5rem;
     color: #194350;
     text-align: left;
-    margin-top: -20px;
+    margin-top: 40px;
     margin-left: 150px;
     position: relative;
     letter-spacing: 0.05em;
@@ -272,22 +292,47 @@ footer {
 
 @media (max-width: 768px) {
   .cruelty-free {
-    padding: 40px 20px; }
+    padding: 20px 20px; }
+    .cruelty-free .header-decoration {
+      top: 20px;
+      left: 20px; }
+      .cruelty-free .header-decoration .section-number {
+        font-size: 1.2rem;
+        margin-left: 0;
+        margin-top: 0; }
+      .cruelty-free .header-decoration .line-decoration {
+        width: 100px;
+        height: 30px; }
     .cruelty-free .cruelty-free-title {
-      font-size: 2.5rem; }
+      font-size: 3rem;
+      margin-left: 20px;
+      margin-top: 60px; }
       .cruelty-free .cruelty-free-title .development {
-        font-size: 1rem;
-        -webkit-text-stroke: 0.5px #333; }
+        font-size: 3rem;
+        margin-top: -30px;
+        margin-left: 20px;
+        -webkit-text-stroke: 1px #FE8B84; }
     .cruelty-free .cruelty-free-description {
       font-size: 1rem;
-      margin-bottom: 20px; }
+      margin: 20px auto; }
     .cruelty-free .puppy-section {
       flex-direction: column;
       align-items: center; }
-      .cruelty-free .puppy-section .puppy-text, .cruelty-free .puppy-section .puppy-image {
-        max-width: 100%;
+      .cruelty-free .puppy-section .puppy-text {
+        max-width: 80%;
+        margin-left: 0;
         text-align: center; }
+        .cruelty-free .puppy-section .puppy-text .puppy-title {
+          font-size: 2rem;
+          margin-top: 20px; }
+        .cruelty-free .puppy-section .puppy-text .puppy-description {
+          font-size: 0.9rem;
+          margin: 0 20px; }
       .cruelty-free .puppy-section .puppy-image {
-        margin-top: 20px; } }
+        max-width: 80%;
+        margin: 20px 0; }
+        .cruelty-free .puppy-section .puppy-image img {
+          width: 100%;
+          height: auto; } }
 
 /*# sourceMappingURL=main.css.map */
