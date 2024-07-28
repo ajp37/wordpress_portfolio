@@ -299,49 +299,85 @@ footer {
           width: 100%;
           height: auto; } }
 #our-flavours {
-  background-color: #FE8B84;
-  text-align: center; }
+  background: linear-gradient(to bottom, #FE8B84, #FFBEB1);
+  text-align: center;
+  padding: 50px 0; }
   #our-flavours h2 {
-    font-size: 2.5em;
-    color: #FFFFFF;
-    margin-bottom: 20px; }
+    font-size: 3em;
+    color: #ffffff;
+    margin-bottom: 50px;
+    font-weight: bold;
+    position: relative; }
+  #our-flavours h2::before {
+    content: "02 - 05";
+    position: absolute;
+    left: -100px;
+    top: -10px;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.5);
+    transform: rotate(-90deg); }
   #our-flavours .flavours-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; }
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto; }
   #our-flavours .flavour-card {
-    background-color: white;
-    color: #194350;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    max-width: 300px; }
+    width: 220px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 10px; }
+    #our-flavours .flavour-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
     #our-flavours .flavour-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover; }
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      margin-right: 10px;
+      float: left; }
     #our-flavours .flavour-card h3 {
-      font-size: 1.5em;
-      margin: 10px 0; }
+      font-size: 1em;
+      margin: 0;
+      color: #f7658b;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 50px; }
     #our-flavours .flavour-card p {
-      padding: 0 10px;
-      font-size: 1em; }
+      clear: both;
+      font-size: 0.8em;
+      color: #666666;
+      margin: 10px 0 0 0; }
     #our-flavours .flavour-card button {
-      background-color: #FE8B84;
+      background-color: #fca9aa;
       border: none;
       color: white;
-      padding: 10px 20px;
-      font-size: 1em;
+      padding: 5px 10px;
+      font-size: 0.8em;
       cursor: pointer;
-      margin-bottom: 10px; }
+      margin-top: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      float: right; }
+      #our-flavours .flavour-card button:hover {
+        background-color: #f7658b; }
   #our-flavours #load-more {
-    background-color: black;
-    border: black;
+    background-color: #333333;
+    border: none;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 30px;
     font-size: 1.2em;
     cursor: pointer;
-    margin-top: 20px; }
+    margin-top: 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s; }
+    #our-flavours #load-more:hover {
+      background-color: #555555; }
 
 /*# sourceMappingURL=main.css.map */
