@@ -1,4 +1,21 @@
 <?php
+
+// En functions.php de tu tema o en un plugin personalizado
+function enqueue_load_more_script() {
+    // Encola el script JavaScript
+    wp_enqueue_script('load-more-flavours', get_template_directory_uri() . '/js/load-more-flavours.js', array(), null, true);
+    
+    // Localiza el script con la variable ajaxurl
+    wp_localize_script('load-more-flavours', 'ajax_object', array(
+        'ajaxurl' => admin_url('admin-ajax.php')
+    ));
+}
+add_action('wp_enqueue_scripts', 'enqueue_load_more_script');
+
+
+
+
+
 function my_theme_enqueue_styles() {
     wp_enqueue_style('main-style', get_template_directory_uri() . '/assets/css/main.css', array(), '1.0', 'all');
 }
@@ -9,18 +26,16 @@ add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
 
 
 
-function enqueue_load_more_script() {
-    wp_enqueue_script('load-more', get_template_directory_uri() . '/js/load-more.js', array(), null, true);
-    wp_localize_script('load-more', 'ajaxurl', admin_url('admin-ajax.php'));
-}
-add_action('wp_enqueue_scripts', 'enqueue_load_more_script');
 
+
+
+// En functions.php o en un plugin personalizado
 
 function load_more_flavours() {
-    $paged = isset($_POST['page']) ? intval($_POST['page']) : 1;
+    $paged = $_POST['page'] + 1; // Incrementar el número de página
     $query = new WP_Query(array(
         'post_type' => 'flavour',
-        'posts_per_page' => 1, // Cambiar esto a 12 cuando tengas más publicaciones
+        'posts_per_page' => 2, // Número de posts por página
         'paged' => $paged
     ));
 
@@ -40,13 +55,32 @@ function load_more_flavours() {
         endwhile;
         wp_reset_postdata();
     else :
-        echo 0;
+        echo '<p>No more flavours found</p>';
     endif;
 
     wp_die();
 }
-add_action('wp_ajax_load_more_flavours', 'load_more_flavours');
 add_action('wp_ajax_nopriv_load_more_flavours', 'load_more_flavours');
+add_action('wp_ajax_load_more_flavours', 'load_more_flavours');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
