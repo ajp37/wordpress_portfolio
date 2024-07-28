@@ -1,24 +1,24 @@
-jQuery(document).ready(function($) {
+document.addEventListener('DOMContentLoaded', function() {
     var page = 1;
 
-    $('#load-more').on('click', function() {
+    document.getElementById('load-more').addEventListener('click', function() {
         page++;
-        var data = {
-            'action': 'load_more_flavours',
-            'page': page
-        };
+        var data = new FormData();
+        data.append('action', 'load_more_flavours');
+        data.append('page', page);
 
-        $.ajax({
-            url: ajaxurl, // Esta variable es proporcionada automáticamente por WordPress
-            type: 'post',
-            data: data,
-            success: function(response) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', ajaxurl, true);
+        xhr.onload = function() {
+            if (xhr.status >= 200 && xhr.status < 400) {
+                var response = xhr.responseText;
                 if (response) {
-                    $('.flavours-grid').append(response);
+                    document.querySelector('.flavours-grid').insertAdjacentHTML('beforeend', response);
                 } else {
-                    $('#load-more').hide();
+                    document.getElementById('load-more').style.display = 'none';
                 }
             }
-        });
+        };
+        xhr.send(data);
     });
 });
