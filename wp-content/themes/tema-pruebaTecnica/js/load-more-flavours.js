@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         data.append('action', 'load_more_flavours');
         data.append('page', page);
 
-        xhr.open('POST', ajaxurl, true); // ajaxurl es una variable global en WordPress para admin-ajax.php
+        xhr.open('POST', ajax_object.ajaxurl, true); // Utiliza ajax_object.ajaxurl
 
         xhr.onload = function () {
             if (xhr.status === 200) {
