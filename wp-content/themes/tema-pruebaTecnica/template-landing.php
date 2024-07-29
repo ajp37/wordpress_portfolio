@@ -76,8 +76,9 @@ get_header();
         else :
             echo '<p>No flavours found</p>';
         endif; ?>
+        <button id="load-more">Load More</button>
     </div>
-    <button id="load-more">Load More</button>
+    
 </div>
 
 
