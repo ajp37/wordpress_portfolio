@@ -442,28 +442,73 @@ footer {
 }
 
 
+
+
+
 #our-flavours {
     background: linear-gradient(to bottom, $flavour-color, #FFBEB1); // Degradado de color de arriba hacia abajo
     text-align: center;
-    padding: 50px 0; // Ajusta el padding superior e inferior para centrar el contenido
+    padding: 150px 0; // Ajusta el padding superior e inferior para centrar el contenido
+    font-family: 'Josefin', sans-serif;
 
-    h2 {
-        font-size: 3em;
-        color: #ffffff;
-        margin-bottom: 50px;
-        font-weight: bold;
-        position: relative;
-    }
+    
 
-    h2::before {
-        content: "02 - 05";
+    .header-decoration2 {
         position: absolute;
-        left: -100px;
-        top: -10px;
-        font-size: 0.8em;
-        color: rgba(255, 255, 255, 0.5);
-        transform: rotate(-90deg);
+        top: 40px; // Ajusta según sea necesario
+        right: 100px; // Ajusta según sea necesario
+        display: flex;
+        align-items: center;
+
+        .section-number2 {
+            position: absolute;
+            font-size: 1.5rem; // Ajusta el tamaño de la fuente
+            font-weight: 600;
+            color: $secondary-color;
+            margin-left: 80px;
+            margin-top: -40px; // Ajusta la posición vertical de los números
+            word-spacing: 0.5em;
+        }
+
+        .line-decoration2 {
+            width: 200px; // Ajusta el ancho según sea necesario
+            height: 90px;
+            background: repeating-linear-gradient(
+                135deg,
+                rgba(255, 126, 95, 0),
+                rgba(255, 126, 95, 0) 2px,
+                rgba(255, 255, 255, 0.5) 2px,
+                rgba(255, 255, 255, 0.5) 4px
+            );
+        }
     }
+
+    .flavours-title {
+        font-family: 'Josefin', sans-serif;
+        font-size: 5.5rem;
+        color: $secondary-color;
+        text-align: right;
+        margin-top: -72px; // Ajusta según sea necesario
+        margin-right: 100px;
+        position: relative;
+        letter-spacing: 0.05em;
+        word-spacing: 0em;
+
+        .flavours-subtitle {
+            display: block;
+            font-size: 5.5rem;
+            font-weight: 600;
+            color: transparent;
+            -webkit-text-stroke: 1px $secondary-color;
+            text-shadow: none;
+            margin-top: -45px;
+            margin-right: -20px;
+        }
+    }
+
+
+
+    
 
     .flavours-grid {
         display: flex;

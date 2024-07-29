@@ -301,21 +301,45 @@ footer {
 #our-flavours {
   background: linear-gradient(to bottom, #FE8B84, #FFBEB1);
   text-align: center;
-  padding: 50px 0; }
-  #our-flavours h2 {
-    font-size: 3em;
-    color: #ffffff;
-    margin-bottom: 50px;
-    font-weight: bold;
-    position: relative; }
-  #our-flavours h2::before {
-    content: "02 - 05";
+  padding: 150px 0;
+  font-family: 'Josefin', sans-serif; }
+  #our-flavours .header-decoration2 {
     position: absolute;
-    left: -100px;
-    top: -10px;
-    font-size: 0.8em;
-    color: rgba(255, 255, 255, 0.5);
-    transform: rotate(-90deg); }
+    top: 40px;
+    right: 100px;
+    display: flex;
+    align-items: center; }
+    #our-flavours .header-decoration2 .section-number2 {
+      position: absolute;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #FFFFFF;
+      margin-left: 80px;
+      margin-top: -40px;
+      word-spacing: 0.5em; }
+    #our-flavours .header-decoration2 .line-decoration2 {
+      width: 200px;
+      height: 90px;
+      background: repeating-linear-gradient(135deg, rgba(255, 126, 95, 0), rgba(255, 126, 95, 0) 2px, rgba(255, 255, 255, 0.5) 2px, rgba(255, 255, 255, 0.5) 4px); }
+  #our-flavours .flavours-title {
+    font-family: 'Josefin', sans-serif;
+    font-size: 5.5rem;
+    color: #FFFFFF;
+    text-align: right;
+    margin-top: -72px;
+    margin-right: 100px;
+    position: relative;
+    letter-spacing: 0.05em;
+    word-spacing: 0em; }
+    #our-flavours .flavours-title .flavours-subtitle {
+      display: block;
+      font-size: 5.5rem;
+      font-weight: 600;
+      color: transparent;
+      -webkit-text-stroke: 1px #FFFFFF;
+      text-shadow: none;
+      margin-top: -45px;
+      margin-right: -20px; }
   #our-flavours .flavours-grid {
     display: flex;
     flex-wrap: wrap;
