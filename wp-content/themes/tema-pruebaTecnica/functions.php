@@ -7,7 +7,7 @@ add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
 
 
 
-// En functions.php o en un plugin personalizado
+// load-more
 function load_more_flavours() {
     $paged = $_POST['page'] + 1; // Incrementar el número de página
     $query = new WP_Query(array(
@@ -40,6 +40,14 @@ function load_more_flavours() {
 add_action('wp_ajax_nopriv_load_more_flavours', 'load_more_flavours');
 add_action('wp_ajax_load_more_flavours', 'load_more_flavours');
 
+
+
+//encolar js
+// function enqueue_load_more_script() {
+//     wp_enqueue_script('load-more-flavours', get_template_directory_uri() . '/js/load-more-flavours.js', array(), null, true);
+//     wp_localize_script('load-more-flavours', 'ajaxurl', admin_url('admin-ajax.php'));
+// }
+// add_action('wp_enqueue_scripts', 'enqueue_load_more_script');
 
 
 
@@ -95,6 +103,5 @@ function create_flavour_cpt() {
     register_post_type('flavour', $args);
 }
 add_action('init', 'create_flavour_cpt', 0);
-
 
 ?>
