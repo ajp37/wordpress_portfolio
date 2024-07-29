@@ -12,7 +12,7 @@ function load_more_flavours() {
     $paged = $_POST['page'] + 1; // Incrementar el número de página
     $query = new WP_Query(array(
         'post_type' => 'flavour',
-        'posts_per_page' => 2, // Número de posts por página
+        'posts_per_page' => 3, // Número de posts por página
         'paged' => $paged
     ));
 

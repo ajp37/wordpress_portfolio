@@ -6,7 +6,6 @@ $background-color: #194350;
 $text-color: #FFFFFF;
 $flavour-color: #FE8B84;
 
-// Global Styles
 body {
     font-family: 'Arial, sans-serif';
     color: $text-color;
@@ -15,16 +14,15 @@ body {
     padding: 0;
 }
 
-/* Suponiendo que tienes un elemento con la clase "texto-especial" */
 .texto-especial {
-    font-family: 'Arial', sans-serif; /* O cualquier otra fuente sans-serif que te guste */
+    font-family: 'Arial', sans-serif; 
     font-size: 24px;
-    color: white; /* Color del texto interior */
+    color: white; 
     text-shadow: 
-      -1px -1px 0 rgba(255, 0, 0, 0.5), /* Sombra interior roja */
-      1px 1px 0 #AED2D6,  /* Sombra interior verde */
-      -2px -2px 0 rgba(0, 0, 255, 0.2), /* Sombra exterior azul */
-      2px 2px 0 rgba(0, 0, 255, 0.2);  /* Sombra exterior azul */
+      -1px -1px 0 rgba(255, 0, 0, 0.5), 
+      1px 1px 0 #AED2D6,  
+      -2px -2px 0 rgba(0, 0, 255, 0.2), 
+      2px 2px 0 rgba(0, 0, 255, 0.2);  
       transform: rotate(-3deg);
       font-style: italic;
   }
@@ -34,11 +32,9 @@ header{
   margin-top: -65px;
   .texto-especial {
     text-align: center;
-    font-size: 36px; /* Ajusta el tamaño según tus preferencias */
+    font-size: 36px;
   }
 }
-
-
 
 footer {
   background-color: $primary-color;
@@ -53,8 +49,6 @@ footer {
   }
 }
 
-
-
 .footer-left {
   flex: 1;
   padding-left: 10%;
@@ -64,10 +58,6 @@ footer {
   flex: 1;
   text-align: right;
   padding-left: 45%;
-
-  //barra
-//   border-left: 2px solid #fff;
-//   padding-left: 10px;
 }
 
 .legal-links {
@@ -84,7 +74,7 @@ footer {
     }
 }
 
-@media (max-width: 768px) { //responsive ahora mismo creo que FOOTER solo
+@media (max-width: 768px) { //responsive FOOTER
   .container {
     flex-direction:row;
     align-items: center;
@@ -93,21 +83,6 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-// Section Styles
 .section {
     padding: 50px 20px;
     text-align: center;
@@ -127,34 +102,34 @@ footer {
     .buy-poison-content {
         max-width: 600px;
         text-align: left;
-        margin-top: -220px; // Ajustar la posición del título y subtítulo
+        margin-top: -220px; 
     }
 
     h1 {
-        font-size: 6.5em; // Ajustar tamaño de la fuente para ser más grande
+        font-size: 6.5em; 
         font-family: "Roboto", sans-serif;
         font-weight: 700;
         font-style: italic;
-        margin-bottom: 10px; // Reducir el margen inferior
+        margin-bottom: 10px; 
         line-height: 1.2;
         position: relative;
 
         .trust-us {
             display: block;
-            font-size: 1em; // Ajustar tamaño de la fuente del subtítulo
+            font-size: 1em; 
             font-weight: 400;
             color: transparent;
-            -webkit-text-stroke: 1px $flavour-color; // Contorno sin relleno
-            text-shadow: none; // Eliminar sombra del texto
+            -webkit-text-stroke: 1px $flavour-color; 
+            text-shadow: none; 
             margin-top: -60px;
             margin-left: 26px;
         }
     }
 
     p {
-        font-size: 1em; // Ajustar tamaño de la fuente
+        font-size: 1em; 
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        margin-bottom: 20px; // Reducir el margen inferior
+        margin-bottom: 20px; 
         max-width: 500px;
         font-weight: lighter;
         letter-spacing: 0.05em;
@@ -182,8 +157,8 @@ footer {
     }
 
     .buy-poison-image {
-        max-width: 250px; // Hacer la imagen un poco más pequeña
-        margin-right: 190px; // Desplazar la imagen hacia el centro
+        max-width: 250px;
+        margin-right: 190px; 
 
         img {
             width: 100%;
@@ -191,15 +166,14 @@ footer {
         }
 
         .image-caption {
-            font-size: 0.7em; // Ajustar tamaño de la fuente de la leyenda
+            font-size: 0.7em; 
             color: #CCCCCC;
-            margin-top: 80px; // Añadir margen superior
+            margin-top: 80px; 
             width: 170%;
         }
     }
 }
 
-// Media Queries
 @media (max-width: 768px) {
     #buy-poison {
         flex-direction: column;
@@ -212,20 +186,20 @@ footer {
             text-align: center;
 
             h1 {
-                font-size: 3em; // Ajustar tamaño de la fuente para dispositivos móviles
-                margin-bottom: 5px; // Ajustar margen inferior para dispositivos móviles
+                font-size: 3em; 
+                margin-bottom: 5px; 
 
                 .trust-us {
-                    font-size: 0.8em; // Ajustar tamaño de la fuente del subtítulo para dispositivos móviles
-                    margin-top: -25px; // Ajustar margen superior para dispositivos móviles
-                    margin-left: -98px; // Centrar subtítulo en dispositivos móviles
-                    -webkit-text-stroke: 0.5px $flavour-color; // Ajustar contorno para dispositivos móviles
+                    font-size: 0.8em; 
+                    margin-top: -25px; 
+                    margin-left: -98px;
+                    -webkit-text-stroke: 0.5px $flavour-color;
                 }
             }
 
             p {
-                font-size: 0.9em; // Ajustar tamaño de la fuente para dispositivos móviles
-                margin-bottom: 15px; // Ajustar margen inferior para dispositivos móviles
+                font-size: 0.9em; 
+                margin-bottom: 15px; 
                 margin-top: 20px;
             }
 
@@ -250,7 +224,7 @@ footer {
         }
 
         .buy-poison-image .image-caption {
-            display: block; // Mostrar leyenda en dispositivos móviles
+            display: block; 
             text-align:right;
             margin-left: 15px;
             margin-right: 15px;
@@ -268,24 +242,24 @@ footer {
 
     .header-decoration {
         position: absolute;
-        top: 80px; // Ajusta según sea necesario
-        left: 160px; // Ajusta según sea necesario
+        top: 80px; 
+        left: 160px; 
         display: flex;
         align-items: center;
 
         .section-number {
             position: absolute;
-            font-size: 2rem; // Ajusta el tamaño de la fuente
+            font-size: 2rem; 
             font-weight: 600;
             font-style: italic;
             color: $primary-color;
             margin-left: 15px;
-            margin-top: -20px; // Ajusta la posición vertical de los números
+            margin-top: -20px; 
             word-spacing: 0.5em;
         }
 
         .line-decoration {
-            width: 350px; // Ajusta el ancho según sea necesario
+            width: 350px; 
             height: 90px;
             background: repeating-linear-gradient(
                 45deg,
@@ -302,7 +276,7 @@ footer {
         font-size: 5.5rem;
         color: $primary-color;
         text-align: left;
-        margin-top: 40px; // Ajusta según sea necesario
+        margin-top: 40px; 
         margin-left: 150px;
         position: relative;
         letter-spacing: 0.05em;
@@ -373,6 +347,7 @@ footer {
 @media (max-width: 768px) {
     .cruelty-free {
         padding: 20px 20px;
+        width: 100%;
 
         .header-decoration {
             top: 20px;
@@ -443,154 +418,192 @@ footer {
 
 
 
-
-
 #our-flavours {
-    background: linear-gradient(to bottom, $flavour-color, #FFBEB1); // Degradado de color de arriba hacia abajo
+    background: linear-gradient(to bottom, $flavour-color, #FFBEB1);
     text-align: center;
-    padding: 150px 0; // Ajusta el padding superior e inferior para centrar el contenido
+    padding: 150px 0; 
     font-family: 'Josefin', sans-serif;
+    width: 100vw; 
+    margin: 0; 
+    box-sizing: border-box; 
+    overflow-x: hidden; 
+}
 
-    
+.header-decoration2 {
+    position: absolute;
+    top: 40px; 
+    right: 100px; 
+    display: flex;
+    align-items: center;
 
-    .header-decoration2 {
+    .section-number2 {
         position: absolute;
-        top: 40px; // Ajusta según sea necesario
-        right: 100px; // Ajusta según sea necesario
-        display: flex;
-        align-items: center;
-
-        .section-number2 {
-            position: absolute;
-            font-size: 1.5rem; // Ajusta el tamaño de la fuente
-            font-weight: 600;
-            color: $secondary-color;
-            margin-left: 80px;
-            margin-top: -40px; // Ajusta la posición vertical de los números
-            word-spacing: 0.5em;
-        }
-
-        .line-decoration2 {
-            width: 200px; // Ajusta el ancho según sea necesario
-            height: 90px;
-            background: repeating-linear-gradient(
-                135deg,
-                rgba(255, 126, 95, 0),
-                rgba(255, 126, 95, 0) 2px,
-                rgba(255, 255, 255, 0.5) 2px,
-                rgba(255, 255, 255, 0.5) 4px
-            );
-        }
-    }
-
-    .flavours-title {
-        font-family: 'Josefin', sans-serif;
-        font-size: 5.5rem;
+        font-size: 1.5rem;
+        font-weight: 600;
         color: $secondary-color;
-        text-align: right;
-        margin-top: -72px; // Ajusta según sea necesario
-        margin-right: 100px;
-        position: relative;
-        letter-spacing: 0.05em;
-        word-spacing: 0em;
-
-        .flavours-subtitle {
-            display: block;
-            font-size: 5.5rem;
-            font-weight: 600;
-            color: transparent;
-            -webkit-text-stroke: 1px $secondary-color;
-            text-shadow: none;
-            margin-top: -45px;
-            margin-right: -20px;
-        }
+        margin-left: 80px;
+        margin-top: -40px;
+        word-spacing: 0.5em;
     }
 
+    .line-decoration2 {
+        width: 200px;
+        height: 90px;
+        background: repeating-linear-gradient(
+            135deg,
+            rgba(255, 126, 95, 0),
+            rgba(255, 126, 95, 0) 2px,
+            rgba(255, 255, 255, 0.5) 2px,
+            rgba(255, 255, 255, 0.5) 4px
+        );
+    }
+}
 
+.flavours-title {
+    font-family: 'Josefin', sans-serif;
+    font-size: 5.5rem;
+    color: $secondary-color;
+    text-align: right;
+    margin-top: -72px;
+    margin-right: 100px;
+    position: relative;
+    letter-spacing: 0.05em;
+    word-spacing: 0em;
 
-    
+    .flavours-subtitle {
+        display: block;
+        font-size: 5.5rem;
+        font-weight: 600;
+        color: transparent;
+        -webkit-text-stroke: 1px $secondary-color;
+        text-shadow: none;
+        margin-top: -45px;
+        margin-right: -20px;
+    }
+}
 
-    .flavours-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        max-width: 1200px;
-        margin: 0 auto;
+.flavours-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.flavour-card {
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 220px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 10px;
+    box-sizing: border-box;
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
-    .flavour-card {
-        background-color: #ffffff;
-        color: #333333;
-        border-radius: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        width: 220px;
-        text-align: left;
-        transition: transform 0.3s, box-shadow 0.3s;
-        padding: 10px;
-
-        &:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        img {
-            width: 50px;
-            height: 50px;
-            object-fit: cover;
-            margin-right: 10px;
-            float: left;
-        }
-
-        h3 {
-            font-size: 1em;
-            margin: 0;
-            color: #f7658b;
-            font-weight: bold;
-            text-transform: uppercase;
-            line-height: 50px; // Alinea verticalmente con la imagen
-        }
-
-        p {
-            clear: both;
-            font-size: 0.8em;
-            color: #666666;
-            margin: 10px 0 0 0; // Ajusta el margen superior para alinear correctamente
-        }
-
-        button {
-            background-color: #fca9aa;
-            border: none;
-            color: white;
-            padding: 5px 10px;
-            font-size: 0.8em;
-            cursor: pointer;
-            margin-top: 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-            float: right; // Coloca el botón a la derecha
-
-            &:hover {
-                background-color: #f7658b;
-            }
-        }
+    img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        margin-right: 10px;
+        float: left;
     }
 
-    #load-more {
-        background-color: #333333;
+    h3 {
+        font-size: 1em;
+        margin: 0;
+        color: $primary-color;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 50px;
+    }
+
+    p {
+        clear: both;
+        font-size: 0.8em;
+        color: $primary-color;
+        margin: 10px 0 0 0;
+    }
+
+    button {
+        background-color: $flavour-color;
         border: none;
         color: white;
-        padding: 15px 30px;
-        font-size: 1.2em;
+        padding: 5px 10px;
+        font-size: 0.8em;
         cursor: pointer;
-        margin-top: 30px;
-        border-radius: 5px;
+        margin-top: 10px;
+        border-radius: 15px;
         transition: background-color 0.3s;
+        float: right;
 
         &:hover {
-            background-color: #555555;
+            background-color: #f7658b;
         }
     }
 }
 
+#load-more {
+    background-color: $secondary-color;
+    border: none;
+    color: $primary-color;
+    padding: 0px 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 50px;
+    // margin-bottom: 50px;
+    width: 150px;
+    height: 50px;
+    border-radius: 40px;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: $flavour-color;
+    }
+}
+
+@media (max-width: 768px) {
+    #our-flavours {
+        padding: 100px 0;
+        width: 100vw;
+    }
+
+    .flavours-title {
+        font-size: 2.5rem;
+        margin-right: 10px;
+        margin-top: -23px;
+        text-align: right;
+    }
+    .flavours-subtitle {
+        font-size: 1rem;
+    }
+
+    .header-decoration2 {
+        top: 10px;
+        right: 10px;
+    }
+
+    .flavours-grid {
+        gap: 10px;
+    }
+
+    .flavour-card {
+        width: 150px;
+    }
+
+    #load-more {
+        font-size: 0.8em;
+        padding: 0px 5px;
+        width: 100px;
+        height: 40px;
+    }
+}

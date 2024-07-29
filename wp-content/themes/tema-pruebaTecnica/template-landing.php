@@ -63,7 +63,7 @@ get_header();
         $query = new WP_Query(
             array(
                 'post_type' => 'flavour',
-                'posts_per_page' => 2 // Cambiar esto a 12 cuando tengas más publicaciones
+                'posts_per_page' => 3 // Número de posts por página
             )
         );
 

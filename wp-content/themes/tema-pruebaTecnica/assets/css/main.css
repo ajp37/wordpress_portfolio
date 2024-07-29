@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: 'Arial, sans-serif';
   color: #FFFFFF;
@@ -6,15 +5,11 @@ body {
   margin: 0;
   padding: 0; }
 
-/* Suponiendo que tienes un elemento con la clase "texto-especial" */
 .texto-especial {
   font-family: 'Arial', sans-serif;
-  /* O cualquier otra fuente sans-serif que te guste */
   font-size: 24px;
   color: white;
-  /* Color del texto interior */
   text-shadow: -1px -1px 0 rgba(255, 0, 0, 0.5), 1px 1px 0 #AED2D6, -2px -2px 0 rgba(0, 0, 255, 0.2), 2px 2px 0 rgba(0, 0, 255, 0.2);
-  /* Sombra exterior azul */
   transform: rotate(-3deg);
   font-style: italic; }
 
@@ -23,8 +18,7 @@ header {
   margin-top: -65px; }
   header .texto-especial {
     text-align: center;
-    font-size: 36px;
-    /* Ajusta el tamaño según tus preferencias */ }
+    font-size: 36px; }
 
 footer {
   background-color: #194350;
@@ -256,7 +250,8 @@ footer {
 
 @media (max-width: 768px) {
   .cruelty-free {
-    padding: 20px 20px; }
+    padding: 20px 20px;
+    width: 100%; }
     .cruelty-free .header-decoration {
       top: 20px;
       left: 20px; }
@@ -302,106 +297,150 @@ footer {
   background: linear-gradient(to bottom, #FE8B84, #FFBEB1);
   text-align: center;
   padding: 150px 0;
-  font-family: 'Josefin', sans-serif; }
-  #our-flavours .header-decoration2 {
+  font-family: 'Josefin', sans-serif;
+  width: 100vw;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; }
+
+.header-decoration2 {
+  position: absolute;
+  top: 40px;
+  right: 100px;
+  display: flex;
+  align-items: center; }
+  .header-decoration2 .section-number2 {
     position: absolute;
-    top: 40px;
-    right: 100px;
-    display: flex;
-    align-items: center; }
-    #our-flavours .header-decoration2 .section-number2 {
-      position: absolute;
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: #FFFFFF;
-      margin-left: 80px;
-      margin-top: -40px;
-      word-spacing: 0.5em; }
-    #our-flavours .header-decoration2 .line-decoration2 {
-      width: 200px;
-      height: 90px;
-      background: repeating-linear-gradient(135deg, rgba(255, 126, 95, 0), rgba(255, 126, 95, 0) 2px, rgba(255, 255, 255, 0.5) 2px, rgba(255, 255, 255, 0.5) 4px); }
-  #our-flavours .flavours-title {
-    font-family: 'Josefin', sans-serif;
-    font-size: 5.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
     color: #FFFFFF;
-    text-align: right;
-    margin-top: -72px;
-    margin-right: 100px;
-    position: relative;
-    letter-spacing: 0.05em;
-    word-spacing: 0em; }
-    #our-flavours .flavours-title .flavours-subtitle {
-      display: block;
-      font-size: 5.5rem;
-      font-weight: 600;
-      color: transparent;
-      -webkit-text-stroke: 1px #FFFFFF;
-      text-shadow: none;
-      margin-top: -45px;
-      margin-right: -20px; }
-  #our-flavours .flavours-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto; }
-  #our-flavours .flavour-card {
-    background-color: #ffffff;
-    color: #333333;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 220px;
-    text-align: left;
-    transition: transform 0.3s, box-shadow 0.3s;
-    padding: 10px; }
-    #our-flavours .flavour-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
-    #our-flavours .flavour-card img {
-      width: 50px;
-      height: 50px;
-      object-fit: cover;
-      margin-right: 10px;
-      float: left; }
-    #our-flavours .flavour-card h3 {
-      font-size: 1em;
-      margin: 0;
-      color: #f7658b;
-      font-weight: bold;
-      text-transform: uppercase;
-      line-height: 50px; }
-    #our-flavours .flavour-card p {
-      clear: both;
-      font-size: 0.8em;
-      color: #666666;
-      margin: 10px 0 0 0; }
-    #our-flavours .flavour-card button {
-      background-color: #fca9aa;
-      border: none;
-      color: white;
-      padding: 5px 10px;
-      font-size: 0.8em;
-      cursor: pointer;
-      margin-top: 10px;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-      float: right; }
-      #our-flavours .flavour-card button:hover {
-        background-color: #f7658b; }
-  #our-flavours #load-more {
-    background-color: #333333;
+    margin-left: 80px;
+    margin-top: -40px;
+    word-spacing: 0.5em; }
+  .header-decoration2 .line-decoration2 {
+    width: 200px;
+    height: 90px;
+    background: repeating-linear-gradient(135deg, rgba(255, 126, 95, 0), rgba(255, 126, 95, 0) 2px, rgba(255, 255, 255, 0.5) 2px, rgba(255, 255, 255, 0.5) 4px); }
+
+.flavours-title {
+  font-family: 'Josefin', sans-serif;
+  font-size: 5.5rem;
+  color: #FFFFFF;
+  text-align: right;
+  margin-top: -72px;
+  margin-right: 100px;
+  position: relative;
+  letter-spacing: 0.05em;
+  word-spacing: 0em; }
+  .flavours-title .flavours-subtitle {
+    display: block;
+    font-size: 5.5rem;
+    font-weight: 600;
+    color: transparent;
+    -webkit-text-stroke: 1px #FFFFFF;
+    text-shadow: none;
+    margin-top: -45px;
+    margin-right: -20px; }
+
+.flavours-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box; }
+
+.flavour-card {
+  background-color: #ffffff;
+  color: #333333;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 220px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 10px;
+  box-sizing: border-box; }
+  .flavour-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
+  .flavour-card img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    float: left; }
+  .flavour-card h3 {
+    font-size: 1em;
+    margin: 0;
+    color: #194350;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 50px; }
+  .flavour-card p {
+    clear: both;
+    font-size: 0.8em;
+    color: #194350;
+    margin: 10px 0 0 0; }
+  .flavour-card button {
+    background-color: #FE8B84;
     border: none;
     color: white;
-    padding: 15px 30px;
-    font-size: 1.2em;
+    padding: 5px 10px;
+    font-size: 0.8em;
     cursor: pointer;
-    margin-top: 30px;
-    border-radius: 5px;
-    transition: background-color 0.3s; }
-    #our-flavours #load-more:hover {
-      background-color: #555555; }
+    margin-top: 10px;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+    float: right; }
+    .flavour-card button:hover {
+      background-color: #f7658b; }
+
+#load-more {
+  background-color: #FFFFFF;
+  border: none;
+  color: #194350;
+  padding: 0px 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 50px;
+  width: 150px;
+  height: 50px;
+  border-radius: 40px;
+  transition: background-color 0.3s; }
+  #load-more:hover {
+    background-color: #FE8B84; }
+
+@media (max-width: 768px) {
+  #our-flavours {
+    padding: 100px 0;
+    width: 100vw; }
+
+  .flavours-title {
+    font-size: 2.5rem;
+    margin-right: 10px;
+    margin-top: -23px;
+    text-align: right; }
+
+  .flavours-subtitle {
+    font-size: 1rem; }
+
+  .header-decoration2 {
+    top: 10px;
+    right: 10px; }
+
+  .flavours-grid {
+    gap: 10px; }
+
+  .flavour-card {
+    width: 150px; }
+
+  #load-more {
+    font-size: 0.8em;
+    padding: 0px 5px;
+    width: 100px;
+    height: 40px; } }
 
 /*# sourceMappingURL=main.css.map */
