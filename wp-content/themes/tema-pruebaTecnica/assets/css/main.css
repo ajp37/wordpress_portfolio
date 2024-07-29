@@ -253,15 +253,15 @@ footer {
     padding: 20px 20px;
     width: 100%; }
     .cruelty-free .header-decoration {
-      top: 20px;
+      top: 45px;
       left: 20px; }
       .cruelty-free .header-decoration .section-number {
         font-size: 1.2rem;
         margin-left: 0;
         margin-top: 0; }
       .cruelty-free .header-decoration .line-decoration {
-        width: 100px;
-        height: 30px; }
+        width: 200px;
+        height: 60px; }
     .cruelty-free .cruelty-free-title {
       font-size: 3rem;
       margin-left: 20px;

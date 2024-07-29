@@ -5,6 +5,12 @@ function my_theme_enqueue_styles() {
 
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
 
+// style.min
+function db_remove_block_library_css(){
+    wp_dequeue_style( 'wp-block-library' );
+} 
+add_action( 'wp_enqueue_scripts', 'db_remove_block_library_css' );
+
 
 
 // load-more
