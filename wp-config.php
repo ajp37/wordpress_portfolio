@@ -97,4 +97,4 @@ require_once ABSPATH . 'wp-settings.php';
 
 
 // configuracion extra para scripts
-define( 'CUSTOM_TAGS', true );
+// define( 'CUSTOM_TAGS', true );
